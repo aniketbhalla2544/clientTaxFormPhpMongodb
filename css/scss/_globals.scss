@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*,
+*::after,
+*::before{
+    font-family: 'Roboto', sans-serif;   
+    box-sizing: border-box;
+}
+
+// colors
+$theme-white: #ffffff;
+$theme-medium-white: #f5f5f5;
+$theme-black: #000000;
+$theme-heading: #333333;
+$theme-text: #383838;
+$theme-blue: #26374a;
+
+$theme-hover-button: #444444;
+
+$theme-link: #2a4263;
+$theme-link-hover: #0535d2;
+$theme-hr: #38414d;
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: $theme-white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $theme-heading;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}
+
+hr{
+    margin-bottom: 1em !important;
+    background-color: $theme-hr !important;
+    opacity: 1 !important;
+    height: 2px !important;
+}
+
+p{
+    color: $theme-text;
+    line-break: 1.6;
+}
+
+a:link,
+a:visited{
+    color: $theme-link;
+    text-decoration: underline;
+    text-decoration-color: $theme-link;
+
+    &:hover{
+        color: $theme-link-hover;
+        text-decoration-color: $theme-link-hover;
+    }
+}
+
+
+// helping classes
+.__button-basic-style{
+   
+    font-size: 1.25rem;
+    padding: 0.5em 1em !important;
+    font-weight: 400;
+
+    &:focus{
+        border: 2px solid $theme-blue;
+    }
+}
+
+.cursor-pointer{
+
+    *:hover{
+        cursor: pointer;
+    }
+}
+
+.__vertical-center{
+    vertical-align: middle;
+}
+
+// helping mixins

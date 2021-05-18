@@ -1,0 +1,81 @@
+@import "globals";
+
+body#taxFormPage {
+    header {
+        background-color: $theme-blue;
+        padding: 1.6em 0;
+
+        & * {
+            color: $theme-white;
+        }
+
+        .header__main-wrapper {
+            gap: 1em;
+
+            img {
+                aspect-ratio: 16 / 9;
+                width: 80px;
+            }
+
+            h4.header__logo-text {
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    main {
+        padding: 5em 0;
+
+        form.tax-form__form {
+            .tax-form__error-fields {
+                color: red;
+                font-weight: 700;
+                margin: 0 10px;
+            }
+
+            .tax-form__row-my {
+                margin: 3em 0;
+            }
+
+            // all form sections
+            .tax-form__form-sections {
+                // border: 0.5px solid black;
+                margin-bottom: 3em;
+                padding: 2em 0;
+
+                &:nth-child(even) {
+                    background-color: $theme-medium-white;
+                }
+            }
+
+            // all form labels
+            .tax-form__label {
+                color: $theme-heading;
+                text-transform: capitalize;
+                margin-bottom: 0.6em;
+                font-weight: 700 !important;
+            }
+
+            .tax-form__button {
+                background-color: $theme-blue;
+                color: $theme-white;
+
+                &:hover {
+                    background-color: $theme-hover-button;
+                }
+            }
+
+            // all form inputs
+            .tax-form__input {
+                border-radius: 0;
+                color: $theme-text;
+
+                &:focus {
+                    border: 2px solid $theme-blue;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,217 @@
+ border: 0.5px solid white;
+
+
+
+names
+
+# personal details
+-------------------
+* name="clientFirstName"
+* name=o
+* name="clientContactNum"
+* name="clientEmail" 
+* name="clientCollegeName"
+* name="clientSinNum"
+* name="clientBirthdate"
+* name="clientNationality"
+* name="isClientAloneYesNo"
+* name="mailingService"
+* name="canadaLandedDate"
+* name="alwaysInQuebec" 
+* name="everChangedProvince"
+* name="clientMartialStatus"
+* name="clientResidencyStatus"
+
+* name="isHomeMailingAddrSame"
+* YES = name="clientHomeAddress", NO name="clientMailingAddress" |  name="clientHomeAddress"
+
+* name="isResidenceDisposed"
+* name="anyForeignIncome"
+* name="ownProperty100k"
+* name="anyMadeDonations"
+* name="anyRrsp"
+* name="anyMedicalExpenses"
+
+#documents checklist
+-------------------
+* name="tfourform"
+* name="RL1Form"
+* name="T2202AForm"
+* name="RL8Form"
+* name="RL31Form"
+* name="voidCheque"
+* name="anyPendingdocs"
+
+* name="clientFinacialInstName"
+* name="clientInstNum"
+* name="clientBranchNum"
+* name="clientAccNum"
+
+# Buttons
+---------
+name="taxFormSubmitBtn"
+name="taxFormResetBtn"
+
+d-flex justify-content-start align-items-center
+
+// console.log(`addressRadsValue: ${addressRadsValue}`);
+
+
+
+
+
+
+     // if (appendNodeParent.firstChild) {
+                        //     removeAllChildNodes(appendNodeParent);
+
+                        // } else {
+                        //     appendNodeParent.appendChild(homeTemplateClone);
+                        // }
+
+
+
+    [...appendNodeParent.children].forEach(child => {
+                        [...child.getElementsByTagName("input")].forEach(inputElement => console.log(inputElement.name));
+                    });
+
+
+
+
+
+
+  <span class="cursor-pointer">
+                                    <input type="radio" value="yes" name="isClientAloneYesNo" id="isClientAloneYesNo">
+                                    <label for="isClientAloneYesNo" class="text-uppercase">yes</label>
+                                </span>
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2 equal sections
+ <!-- first name and last name -->
+                <div class="row mx-0">
+                    <div class="pt-2 ps-0 col-6">
+                        <label for="firstnameinput" class="tax-form__label">first name</label>
+                        <input type="email" class="tax-form__input form-control" id="firstnameinput" placeholder="Enter your first name">
+                    </div>
+
+                    <div class="pt-2 pe-0 col-6">
+                        <label for="lastnameinput" class="tax-form__label">last name</label>
+                        <input type="email" class="tax-form__input form-control" id="lastnameinput" placeholder="Enter your last name">
+                    </div>
+                </div>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 3 sections
+
+ <!-- college name, sin number & birth date -->
+                <div class="tax-form__row-my row mx-0">
+                    <div class="ps-0 col-4">
+                        <label for="contactnuminput" class="tax-form__label">contact number</label>
+                        <input type="number" class="tax-form__input form-control" id="contactnuminput" placeholder="Enter your contact number">
+                    </div>
+
+                    <div class="pe-0 col-4">
+                        <label for="lastnameinput" class="tax-form__label">Email</label>
+                        <input type="email" class="tax-form__input form-control" id="emailinput" placeholder="Enter your email">
+                    </div>
+
+                    <div class="pe-0 col-4">
+                        <label for="lastnameinput" class="tax-form__label">Email</label>
+                        <input type="email" class="tax-form__input form-control" id="emailinput" placeholder="Enter your email">
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tax-form__row-my row mx-0">
+                        <div class="ps-0 col-6">
+                            <label for="firstnameinput" class="tax-form__label">first name</label>
+                            <input type="text" class="tax-form__input form-control" name="clientFirstName" id="firstnameinput" placeholder="Enter your first name">
+                        </div>
+
+                        <div class="pe-0 col-6">
+                            <label for="lastnameinput" class="tax-form__label">last name</label>
+                            <input type="text" class="tax-form__input form-control" name="clientLastName" id="lastnameinput" placeholder="Enter your last name">
+                        </div>
+                    </div>
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+
+    if (empty($errors)) {
+
+        foreach ($fields as $field) {
+
+            if ($field === "favoriteFruit") {
+                printf("%s: %s<br />", $field, var_export(get($field), TRUE));
+            } else {
+                printf("%s: %s<br />", $field, get($field));
+            }
+        };
+        // for each ends
+
+        exit;
+    }
+    // if else ends
+
+
+----------------------------------------------------------
+print keys of as assciative array   print_r(array_keys($values));
+
+print vlaues of as assciative array   print_r(array_keys($values));
+
+htmlspecialchars($values['clientFirstName'])
+
+
+---------------------------------------------------------------------------------------------
+
+
+ 			 <?php checkFieldInErrors('clientFirstName') ?>
+
+
+			value="<?php echo htmlspecialchars($values['']); ?>"
+
+---------------------------------------------------------------------------------------------
+
+important fields: firstName, lastName, email, martial status, residency status, 
+
+
+doubts: 
+
+
+
+
+
+
+
+
+
+

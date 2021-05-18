@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+*,
+*::after,
+*::before {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+hr {
+  margin-bottom: 1em !important;
+  background-color: #38414d !important;
+  opacity: 1 !important;
+  height: 2px !important;
+}
+
+p {
+  color: #383838;
+  line-break: 1.6;
+}
+
+a:link,
+a:visited {
+  color: #2a4263;
+  text-decoration: underline;
+  text-decoration-color: #2a4263;
+}
+
+a:link:hover,
+a:visited:hover {
+  color: #0535d2;
+  text-decoration-color: #0535d2;
+}
+
+.__button-basic-style {
+  font-size: 1.25rem;
+  padding: 0.5em 1em !important;
+  font-weight: 400;
+}
+
+.__button-basic-style:focus {
+  border: 2px solid #26374a;
+}
+
+.cursor-pointer *:hover {
+  cursor: pointer;
+}
+
+.__vertical-center {
+  vertical-align: middle;
+}
+
+body#taxFormPage header {
+  background-color: #26374a;
+  padding: 1.6em 0;
+}
+
+body#taxFormPage header * {
+  color: #ffffff;
+}
+
+body#taxFormPage header .header__main-wrapper {
+  gap: 1em;
+}
+
+body#taxFormPage header .header__main-wrapper img {
+  aspect-ratio: 16 / 9;
+  width: 80px;
+}
+
+body#taxFormPage header .header__main-wrapper h4.header__logo-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+body#taxFormPage main {
+  padding: 5em 0;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__error-fields {
+  color: red;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__row-my {
+  margin: 3em 0;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__form-sections {
+  margin-bottom: 3em;
+  padding: 2em 0;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__form-sections:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__label {
+  color: #333333;
+  text-transform: capitalize;
+  margin-bottom: 0.6em;
+  font-weight: 700 !important;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__button {
+  background-color: #26374a;
+  color: #ffffff;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__button:hover {
+  background-color: #444444;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__input {
+  border-radius: 0;
+  color: #383838;
+}
+
+body#taxFormPage main form.tax-form__form .tax-form__input:focus {
+  border: 2px solid #26374a;
+  box-shadow: none;
+}
+/*# sourceMappingURL=app.css.map */
