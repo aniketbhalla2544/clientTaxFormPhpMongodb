@@ -7,7 +7,7 @@ names
 # personal details
 -------------------
 * name="clientFirstName"
-* name=o
+* name="clientLastName"
 * name="clientContactNum"
 * name="clientEmail" 
 * name="clientCollegeName"

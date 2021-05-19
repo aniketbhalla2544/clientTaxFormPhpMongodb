@@ -17,9 +17,9 @@
 
 <?php
 
-// echo extension_loaded("mongodb") ? "monogodb extension loaded\n" : "not loaded\n";
+//  
 require 'vendor/autoload.php'; // include Composer's autoloader
-// echo phpinfo();
+echo phpinfo();
 
 // connect to mongodb
 $client = new MongoDB\Client("mongodb://localhost:27017");
